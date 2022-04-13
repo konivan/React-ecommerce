@@ -1,0 +1,5 @@
+.content-wrap {
+  grid-area: c;
+  background-color: #f7f7f7;
+  height: 820px;
+}

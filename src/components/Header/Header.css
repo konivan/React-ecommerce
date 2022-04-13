@@ -1,0 +1,6 @@
+.header-wrap {
+  grid-area: h;
+  background-color: #242424;
+  display: flex;
+  justify-content: space-between;
+}

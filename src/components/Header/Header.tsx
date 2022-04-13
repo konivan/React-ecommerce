@@ -1,7 +1,8 @@
 import React, { FC, useState } from 'react';
-import logoImg from '../assets/images/logo.svg';
-import cartImg from '../assets/images/bxs-cart.svg';
-import { CartItem } from '../types';
+import logoImg from '../../assets/images/logo.svg';
+import cartImg from '../../assets/images/bxs-cart.svg';
+import { CartItem } from '../../types';
+import './Header.css';
 
 const cartItem: CartItem[] = [
   {
@@ -29,7 +30,7 @@ const Header: FC = () => {
   const total:number = cartItem.reduce((acc, item) => acc + item.count, 0)
 
   return (
-    <div className="flex items-center justify-between bg-emerald-700">
+    <div className='header-wrap'>
       <div>
         <img src={logoImg} alt="logo" width="200" height="100" />
       </div>
