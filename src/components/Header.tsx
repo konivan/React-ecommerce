@@ -1,5 +1,6 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import logoImg from '../assets/images/logo.svg';
+import cartImg from '../assets/images/bxs-cart.svg';
 import { CartItem } from '../types';
 
 const cartItem: CartItem[] = [
@@ -24,21 +25,31 @@ const cartItem: CartItem[] = [
 ];
 
 const Header: FC = () => {
+  const[isCartShow, setIsCartShow] = useState(true);
+  const total:number = cartItem.reduce((acc, item) => acc + item.count, 0)
+
   return (
-    <div className='flex items-center content-between'>
+    <div className="flex items-center justify-between bg-emerald-700">
       <div>
-        <img src={logoImg} alt="logo" width="95" height="85" />
+        <img src={logoImg} alt="logo" width="200" height="100" />
       </div>
-      {cartItem.map((item) => (
-        <div className="flex items-center">
-          <div className='mr-1'>{item.name}</div>
-          <div className="mr-1">
-            <img src={item.imagePath} alt={item.name} width="55" height="55" />
+      <button onClick={() => {setIsCartShow(!isCartShow)}} className='absolute right-0'>
+        <img src={cartImg} />
+      </button>
+      <div className={isCartShow ? "hidden" : "flex items-center"}>
+        {cartItem.map((item) => (
+          <div key={`cart item ${item.name}`}>
+            <div className="mr-1">{item.name}</div>
+            <div className="mr-1">
+              <img
+                src={item.imagePath}
+                alt={item.name}
+                width="55" height="55"/>
+            </div>
+            <div>{`${item.price} x ${item.count}`}</div>
           </div>
-          <div>{item.price}</div>
-          <div className='mr-5 ml-1'>{item.count}</div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
