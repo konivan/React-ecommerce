@@ -4,3 +4,9 @@ export interface CartItem {
   price: number,
   count: number,
 }
+
+export interface ContentItem {
+  name: string,
+  imagePath: string,
+  price: number,
+}
