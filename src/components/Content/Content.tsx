@@ -19,6 +19,81 @@ const contentItem: ContentItem[] = [
     imagePath: "https://items.s1.citilink.ru/1547104_v01_b.jpg",
     price: 2900,
   },
+  {
+    name: "Apple M1 Pro 10",
+    imagePath: "https://items.s1.citilink.ru/1624466_v01_b.jpg",
+    price: 4200,
+  },
+  {
+    name: "DELL Latitude 9420",
+    imagePath: "https://items.s1.citilink.ru/1653707_v01_b.jpg",
+    price: 4800,
+  },
+  {
+    name: "Acer Predator Helios 300",
+    imagePath: "https://items.s1.citilink.ru/1547104_v01_b.jpg",
+    price: 2900,
+  },
+  {
+    name: "Apple M1 Pro 10",
+    imagePath: "https://items.s1.citilink.ru/1624466_v01_b.jpg",
+    price: 4200,
+  },
+  {
+    name: "DELL Latitude 9420",
+    imagePath: "https://items.s1.citilink.ru/1653707_v01_b.jpg",
+    price: 4800,
+  },
+  {
+    name: "Acer Predator Helios 300",
+    imagePath: "https://items.s1.citilink.ru/1547104_v01_b.jpg",
+    price: 2900,
+  },
+  {
+    name: "Apple M1 Pro 10",
+    imagePath: "https://items.s1.citilink.ru/1624466_v01_b.jpg",
+    price: 4200,
+  },
+  {
+    name: "DELL Latitude 9420",
+    imagePath: "https://items.s1.citilink.ru/1653707_v01_b.jpg",
+    price: 4800,
+  },
+  {
+    name: "Acer Predator Helios 300",
+    imagePath: "https://items.s1.citilink.ru/1547104_v01_b.jpg",
+    price: 2900,
+  },
+  {
+    name: "Apple M1 Pro 10",
+    imagePath: "https://items.s1.citilink.ru/1624466_v01_b.jpg",
+    price: 4200,
+  },
+  {
+    name: "DELL Latitude 9420",
+    imagePath: "https://items.s1.citilink.ru/1653707_v01_b.jpg",
+    price: 4800,
+  },
+  {
+    name: "Acer Predator Helios 300",
+    imagePath: "https://items.s1.citilink.ru/1547104_v01_b.jpg",
+    price: 2900,
+  },
+  {
+    name: "Apple M1 Pro 10",
+    imagePath: "https://items.s1.citilink.ru/1624466_v01_b.jpg",
+    price: 4200,
+  },
+  {
+    name: "DELL Latitude 9420",
+    imagePath: "https://items.s1.citilink.ru/1653707_v01_b.jpg",
+    price: 4800,
+  },
+  {
+    name: "Acer Predator Helios 300",
+    imagePath: "https://items.s1.citilink.ru/1547104_v01_b.jpg",
+    price: 2900,
+  },
 ];
 
 const Content:FC = () => {

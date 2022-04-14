@@ -1,5 +1,11 @@
 .content-wrap {
   grid-area: c;
   background-color: #f7f7f7;
-  height: 820px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
-import logoImg from '../../assets/images/logo.svg';
-import cartImg from '../../assets/images/bxs-cart.svg';
+import logoImg from '../../assets/images/vercel.svg';
+import cartImg from '../../assets/images/bx-cart.svg';
 import { CartItem } from '../../types';
 import './Header.css';
 
@@ -31,23 +31,23 @@ const Header: FC = () => {
 
   return (
     <div className='header-wrap'>
-      <div>
-        <img src={logoImg} alt="logo" width="200" height="100" />
+      <div className='header-logo-wrap'>
+        <img src={logoImg} alt="logo"/>
       </div>
-      <button onClick={() => {setIsCartShow(!isCartShow)}} className='absolute right-0'>
-        <img src={cartImg} />
+      <button onClick={() => {setIsCartShow(!isCartShow)}} className='cartBtn'>
+        <img src={cartImg}/>
       </button>
-      <div className={isCartShow ? "hidden" : "flex items-center"}>
+      <div className={isCartShow ? "hidden" : "active-cart"}>
         {cartItem.map((item) => (
-          <div key={`cart item ${item.name}`}>
-            <div className="mr-1">{item.name}</div>
-            <div className="mr-1">
+          <div key={`cart item ${item.name}`} className="cart-items">
+            <div className="cart-name">{item.name}</div>
+            <div className="cart-img">
               <img
                 src={item.imagePath}
-                alt={item.name}
-                width="55" height="55"/>
+                alt={item.name}/>
             </div>
-            <div>{`${item.price} x ${item.count}`}</div>
+            <div className='cart-count'>{`${item.price}$ x ${item.count}`}</div>
+            <button className='cart-delete-btn'>Удалить</button>
           </div>
         ))}
       </div>
