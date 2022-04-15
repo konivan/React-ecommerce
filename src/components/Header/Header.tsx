@@ -10,18 +10,21 @@ const cartItem: CartItem[] = [
     imagePath: "https://items.s1.citilink.ru/1624466_v01_b.jpg",
     price: 4200,
     count: 1,
+    _id: '45vvg45',
   },
   {
     name: "DELL Latitude 9420",
     imagePath: "https://items.s1.citilink.ru/1653707_v01_b.jpg",
     price: 4800,
     count: 1,
+    _id: '45qwe5',
   },
   {
     name: "Acer Predator Helios 300",
     imagePath: "https://items.s1.citilink.ru/1547104_v01_b.jpg",
     price: 2900,
     count: 1,
+    _id: '3131245',
   },
 ];
 
