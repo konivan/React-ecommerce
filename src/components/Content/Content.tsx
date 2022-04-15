@@ -8,6 +8,7 @@ const contentItem: ContentItem[] = [
     name: "Apple M1 Pro 10",
     imagePath: "https://items.s1.citilink.ru/1624466_v01_b.jpg",
     price: 4200,
+    _id: '435345',
   },
   {
     name: "DELL Latitude 9420",

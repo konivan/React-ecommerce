@@ -2,7 +2,7 @@ import { actionTypes, CartItem, TypeActionCart } from "./types"
 
 const initialState: CartItem[] = [];
 
-export const cartReducer = (state = initialState, action: TypeActionCart) {
+export const cartReducer = (state = initialState, action: TypeActionCart) => {
   switch (action.type) {
     case actionTypes.CART_ADD_ITEM: {
       const cart = [...state];
@@ -20,7 +20,10 @@ export const cartReducer = (state = initialState, action: TypeActionCart) {
     }
 
     case actionTypes.CART_REMOVE_ITEM: {
-      
+      const cart = [...state];
+      cart.forEach((item, index) => {
+        if(item._id === action.payload)cart.slice(index, 1);
+      });
 
       return cart;
     }
