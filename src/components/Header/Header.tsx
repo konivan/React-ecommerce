@@ -27,7 +27,8 @@ const cartItem: CartItem[] = [
 
 const Header: FC = () => {
   const[isCartShow, setIsCartShow] = useState(true);
-  const total:number = cartItem.reduce((acc, item) => acc + item.count, 0)
+
+  const total:number = cartItem.reduce((acc, item) => acc + item.price, 0)
 
   return (
     <div className='header-wrap'>

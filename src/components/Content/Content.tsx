@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { ContentItem } from '../../types';
-import CardItem from '../CardItem/CardItem';
+import CardItem from './CardItem/CardItem';
 import './Content.css'
 
 const contentItem: ContentItem[] = [

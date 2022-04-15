@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
-import { ContentItem } from '../../types';
+import { ContentItem } from '../../../types';
 import './CardItem.css';
+import ItemCount from './ItemCount/ItemCount';
 
 interface Props {
   item: ContentItem,
@@ -14,6 +15,7 @@ const CardItem:FC<Props> = ({item}) => {
         <div className="item-name">{item.name}</div>
         <div className="item-price">{item.price}$</div>
         <button className="item-btn">В корзину</button>
+        <ItemCount />
       </div>
     </div>
   );
