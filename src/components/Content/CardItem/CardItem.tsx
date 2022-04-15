@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { ContentItem } from '../../../types';
+import { ContentItem } from '../../../store/cart/types';
 import './CardItem.css';
 import ItemCount from './ItemCount/ItemCount';
 

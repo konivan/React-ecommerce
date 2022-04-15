@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react';
 import logoImg from '../../assets/images/vercel.svg';
 import cartImg from '../../assets/images/bx-cart.svg';
-import { CartItem } from '../../types';
+import { CartItem } from '../../store/cart/types';
 import './Header.css';
 
 const cartItem: CartItem[] = [
