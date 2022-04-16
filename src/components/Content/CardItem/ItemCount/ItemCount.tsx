@@ -1,14 +1,18 @@
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
+import { TypeSetState } from '../../../../store/cart/types';
 
-const ItemCount = () => {
+interface Count {
+  count: number,
+  setCount: TypeSetState<number>
+}
 
-  const [count, setCount] = useState(0);
+const ItemCount: FC<Count> = ({count, setCount}) => {
 
   return (
     <div>
       <button onClick={() => setCount((count) => count += 1)}>+</button>
       <input value={count} onChange={e => setCount(+e.target.value)}></input>
-      <button onClick={count == 1 ? () => setCount((count) => count -= 1): () => setCount((count) => count -= 0)}>-</button>
+      <button onClick={count >= 1 ? () => setCount((count) => count -= 1): () => setCount((count) => count -= 0)}>-</button>
     </div>
   );
 };

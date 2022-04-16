@@ -1,116 +1,135 @@
 import React, { FC } from 'react';
-import { ContentItem } from '../../store/cart/types';
+import { CartItem } from '../../store/cart/types';
 import CardItem from './CardItem/CardItem';
 import './Content.css'
 
-const contentItem: ContentItem[] = [
+const contentItem: CartItem[] = [
   {
     name: "Apple M1 Pro 10",
     imagePath: "https://items.s1.citilink.ru/1624466_v01_b.jpg",
     price: 4200,
     _id: '435345',
+    count: 1,
   },
   {
     name: "DELL Latitude 9420",
     imagePath: "https://items.s1.citilink.ru/1653707_v01_b.jpg",
     price: 4800,
-    _id: 'cweffww'
+    _id: 'cweffww',
+    count: 1,
   },
   {
     name: "Acer Predator Helios 300",
     imagePath: "https://items.s1.citilink.ru/1547104_v01_b.jpg",
     price: 2900,
-    _id: 'eqe123w'
+    _id: 'eqe123w',
+    count: 1,
   },
   {
     name: "Apple M1 Pro 10",
     imagePath: "https://items.s1.citilink.ru/1624466_v01_b.jpg",
     price: 4200,
-    _id: 'cwe231ffww'
+    _id: 'cwe231ffww',
+    count: 1,
   },
   {
     name: "DELL Latitude 9420",
     imagePath: "https://items.s1.citilink.ru/1653707_v01_b.jpg",
     price: 4800,
-    _id: 'asdad'
+    _id: 'asdad',
+    count: 1,
   },
   {
     name: "Acer Predator Helios 300",
     imagePath: "https://items.s1.citilink.ru/1547104_v01_b.jpg",
     price: 2900,
-    _id: 'cw21313ww'
+    _id: 'cw21313ww',
+    count: 1,
   },
   {
     name: "Apple M1 Pro 10",
     imagePath: "https://items.s1.citilink.ru/1624466_v01_b.jpg",
     price: 4200,
-    _id: 'jkljkh'
+    _id: 'jkljkh',
+    count: 1,
   },
   {
     name: "DELL Latitude 9420",
     imagePath: "https://items.s1.citilink.ru/1653707_v01_b.jpg",
     price: 4800,
-    _id: '568823'
+    _id: '568823',
+    count: 1,
+
   },
   {
     name: "Acer Predator Helios 300",
     imagePath: "https://items.s1.citilink.ru/1547104_v01_b.jpg",
     price: 2900,
-    _id: 'ghkkjgh'
+    _id: 'ghkkjgh',
+    count: 1,
   },
   {
     name: "Apple M1 Pro 10",
     imagePath: "https://items.s1.citilink.ru/1624466_v01_b.jpg",
     price: 4200,
-    _id: 'lmkjl'
+    _id: 'lmkjl',
+    count: 1,
   },
   {
     name: "DELL Latitude 9420",
     imagePath: "https://items.s1.citilink.ru/1653707_v01_b.jpg",
     price: 4800,
-    _id: '1231212'
+    _id: '1231212',
+    count: 1,
   },
   {
     name: "Acer Predator Helios 300",
     imagePath: "https://items.s1.citilink.ru/1547104_v01_b.jpg",
     price: 2900,
-    _id: 'fhvhxd'
+    _id: 'fhvhxd',
+    count: 1,
   },
   {
     name: "Apple M1 Pro 10",
     imagePath: "https://items.s1.citilink.ru/1624466_v01_b.jpg",
     price: 4200,
-    _id: 'hjghjyhg'
+    _id: 'hjghjyhg',
+    count: 1,
   },
   {
     name: "DELL Latitude 9420",
     imagePath: "https://items.s1.citilink.ru/1653707_v01_b.jpg",
     price: 4800,
-    _id: 'kujytukiy'
+    _id: 'kujytukiy',
+    count: 1,
   },
   {
     name: "Acer Predator Helios 300",
     imagePath: "https://items.s1.citilink.ru/1547104_v01_b.jpg",
     price: 2900,
-    _id: '546546'
+    _id: '546546',
+    count: 1,
   },
   {
     name: "Apple M1 Pro 10",
     imagePath: "https://items.s1.citilink.ru/1624466_v01_b.jpg",
     price: 4200,
-    _id: 'vcvcvcv'
+    _id: 'vcvcvcv',
+    count: 1,
   },
   {
     name: "DELL Latitude 9420",
     imagePath: "https://items.s1.citilink.ru/1653707_v01_b.jpg",
     price: 4800,
-    _id: 'cxcxcxc'
+    _id: 'cxcxcxc',
+    count: 1,
   },
   {
     name: "Acer Predator Helios 300",
     imagePath: "https://items.s1.citilink.ru/1547104_v01_b.jpg",
     price: 2900,
-    _id: 'zxzxzxz'
+    _id: 'zxzxzxz',
+    count: 1,
   },
 ];
 

@@ -1,3 +1,5 @@
+import { Dispatch, SetStateAction } from "react";
+
 export enum actionTypes {
   CART_ADD_ITEM = 'CART_ADD_ITEM',
   CART_REMOVE_ITEM = 'CART_REMOVE_ITEM',
@@ -34,3 +36,5 @@ export interface ContentItem {
   price: number,
   _id: string,
 }
+
+export type TypeSetState<T> = Dispatch<SetStateAction<T>>
