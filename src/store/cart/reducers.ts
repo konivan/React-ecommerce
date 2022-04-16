@@ -7,7 +7,8 @@ export const cartReducer = (state = initialState, action: TypeActionCart) => {
     case actionTypes.CART_ADD_ITEM: {
       const cart = [...state];
       const {count, product} = action.payload;
-      const foundProduct = cart.find(item => item._id === product._id)
+
+      const foundProduct = cart.find(i => i._id === product._id)
       if (foundProduct) {
         foundProduct.count = count;
       } else {

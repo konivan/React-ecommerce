@@ -136,7 +136,7 @@ const contentItem: CartItem[] = [
 const Content:FC = () => {
   return (
     <div className='content-wrap'>
-      {contentItem.map(item => <CardItem item={item}/>)}
+      {contentItem.map(item => <CardItem item={item} key={item._id}/>)}
     </div>
   );
 };

@@ -6,7 +6,7 @@ export enum actionTypes {
 }
 
 interface CartAddItemPayload {
-  product: CartItem,
+  product: ContentItem,
   count: number,
 }
 
