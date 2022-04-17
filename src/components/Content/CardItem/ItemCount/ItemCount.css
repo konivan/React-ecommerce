@@ -1,0 +1,29 @@
+.input-wrapper {
+ position: relative;
+ top: 61px;
+ right: 38px;
+}
+
+.num-input {
+  width: 90px;
+  font-weight: 700;
+  border: 3px solid rgba(41, 40, 40, 0.819);
+  border-radius: 10px;
+  pointer-events: none;
+  text-align: center;
+}
+
+.plus-btn img {
+  position: relative;
+  top: 8px;
+  margin: 1px;
+  width: 25px;
+  height: 25px;
+}
+
+.minus-btn img {
+  position: relative;
+
+  width: 25px;
+  height: 25px;
+}

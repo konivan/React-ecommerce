@@ -17,7 +17,7 @@ const Header: FC = () => {
     dispatch(removeFromCart(id))
   };
 
-  const total:number = cart.reduce((acc, item) => acc + item.price, 0)
+  const total:number = cart.reduce((acc, item) => acc + item.price * item.count, 0)
 
   return (
     <div className='header-wrap'>
@@ -26,7 +26,7 @@ const Header: FC = () => {
       </div>
       <button onClick={() => {setIsCartShow(!isCartShow)}} className='cartBtn'>
         <img src={cartImg}/>
-        <div>{cart.length}</div>
+        <div className='cart-length'>{cart.length}</div>
       </button>
       <div className={isCartShow ? "hidden" : "active-cart"}>
         {cart.map((item) => (
@@ -41,6 +41,7 @@ const Header: FC = () => {
             <button onClick={() => removeHandler(item._id)} className='cart-delete-btn'>Удалить</button>
           </div>
         ))}
+        <div className={isCartShow ? "hidden" : 'total-cart'}>{total}</div>
       </div>
     </div>
   );
