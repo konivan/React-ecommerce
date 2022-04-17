@@ -3,11 +3,19 @@ import logoImg from '../../assets/images/vercel.svg';
 import cartImg from '../../assets/images/bx-cart.svg';
 import './Header.css';
 import { useTypeSelector } from '../../hooks/useTypeSelector';
+import { useDispatch } from 'react-redux';
+import { removeFromCart } from '../../store/cart/actions';
 
 
 const Header: FC = () => {
   const cart = useTypeSelector(state => state.cart);
   const[isCartShow, setIsCartShow] = useState(true);
+
+  const dispatch = useDispatch();
+
+  const removeHandler = (id: string) => {
+    dispatch(removeFromCart(id))
+  };
 
   const total:number = cart.reduce((acc, item) => acc + item.price, 0)
 
@@ -30,7 +38,7 @@ const Header: FC = () => {
                 alt={item.name}/>
             </div>
             <div className='cart-count'>{`${item.price}$ x ${item.count}`}</div>
-            <button className='cart-delete-btn'>Удалить</button>
+            <button onClick={() => removeHandler(item._id)} className='cart-delete-btn'>Удалить</button>
           </div>
         ))}
       </div>

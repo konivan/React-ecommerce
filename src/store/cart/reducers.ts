@@ -21,12 +21,7 @@ export const cartReducer = (state = initialState, action: TypeActionCart) => {
     }
 
     case actionTypes.CART_REMOVE_ITEM: {
-      const cart = [...state];
-      cart.forEach((item, index) => {
-        if(item._id === action.payload)cart.slice(index, 1);
-      });
-
-      return cart;
+      return state.filter(item => item._id !== action.payload);
     }
     default:
       return state;
