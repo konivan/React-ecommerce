@@ -5,6 +5,7 @@ import './Header.css';
 import { useTypeSelector } from '../../hooks/useTypeSelector';
 import { useDispatch } from 'react-redux';
 import { removeFromCart } from '../../store/cart/actions';
+import ItemCount from '../Content/CardItem/ItemCount/ItemCount';
 
 
 const Header: FC = () => {
@@ -41,7 +42,7 @@ const Header: FC = () => {
             <button onClick={() => removeHandler(item._id)} className='cart-delete-btn'>Удалить</button>
           </div>
         ))}
-        <div className={isCartShow ? "hidden" : 'total-cart'}>{total}</div>
+        <div className={isCartShow || cart.length == 0 ? "hidden" : 'total-cart'}>Итого: {total}$</div>
       </div>
     </div>
   );

@@ -9,6 +9,10 @@
   z-index: 3;
 }
 
+.hidden {
+  display: none;
+}
+
 .header-logo-wrap img {
   position: relative;
   bottom: 18px;
@@ -56,6 +60,14 @@
 
 .cart-name {
   font-weight: 600;
+}
+
+.total-cart {
+  font-weight: 700;
+  margin-top: 8px;
+  position: relative;
+  top: 50px;
+  left: 50px;
 }
 
 .cart-count {

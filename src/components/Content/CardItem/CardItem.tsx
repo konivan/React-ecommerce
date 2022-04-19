@@ -16,6 +16,7 @@ const CardItem:FC<Props> = ({item}) => {
 
   const addHandler = () => {
     dispatch(addToCart(item, count))
+    setCount(0);
   }
 
   return (
