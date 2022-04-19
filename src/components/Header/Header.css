@@ -64,10 +64,14 @@
 
 .total-cart {
   font-weight: 700;
-  margin-top: 8px;
+  border:3px solid rgba(42, 42, 42, 0.819);
+  border-radius: 6px;
+  padding: 1px 10px;
+  background-color: #fff;
+  width: 130px;
   position: relative;
-  top: 50px;
-  left: 50px;
+  top: 70px;
+  left: 34px;
 }
 
 .cart-count {

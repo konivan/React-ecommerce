@@ -13,7 +13,7 @@ const ItemCount: FC<Count> = ({count, setCount}) => {
 
   return (
     <div className='input-wrapper'>
-      <button onClick={() => setCount((count) => count += 1)} className='plus-btn'>
+      <button onClick={() => setCount((count) => count += 1)} className={'plus-btn'}>
         <img src={plusImg} alt='plus' />
       </button>
       <input value={count} onChange={e => setCount(+e.target.value)} className='num-input'></input>
