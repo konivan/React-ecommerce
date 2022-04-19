@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { FC } from 'react';
 import { TypeSetState } from '../../../../store/cart/types';
 import './ItemCount.css';
 import plusImg from '../../../../assets/images/bx-plus-circle.svg';

@@ -11,12 +11,12 @@ export const cartReducer = (state = initialState, action: TypeActionCart) => {
       const foundProduct = cart.find(i => i._id === product._id)
       if (foundProduct) {
         foundProduct.count = count;
-      } else {
+      } else if (count !== 0) {
         cart.push({
           ...product,
           count
         })
-      }
+      } else return cart;
       return cart;
     }
 
