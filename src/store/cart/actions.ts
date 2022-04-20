@@ -10,12 +10,12 @@ export const removeFromCart = (productId: string) => ({
   payload: productId,
 })
 
-export const sortItemsByPrice = (product: CartItem) => ({
+export const sortItemsByPrice = (product: CartItem[]) => ({
   type: actionTypes.SORT_BY_PRICE,
   payload: product,
 })
 
-export const sortItemsByName = (product: CartItem) => ({
+export const sortItemsByName = (product: CartItem[]) => ({
   type: actionTypes.SORT_BY_NAME,
   payload: product,
 })

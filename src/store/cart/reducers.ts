@@ -23,6 +23,9 @@ export const cartReducer = (state = initialState, action: TypeActionCart) => {
     case actionTypes.CART_REMOVE_ITEM: {
       return state.filter(item => item._id !== action.payload);
     }
+    case actionTypes.SORT_BY_PRICE: {
+      return state.sort((a, b) => a.price - b.price);
+    }
     default:
       return state;
   }

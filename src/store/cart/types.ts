@@ -22,7 +22,12 @@ interface CartRemoveItem {
   payload: string,
 }
 
-export type TypeActionCart = CartAddItem | CartRemoveItem;
+interface SortByPrice {
+  type: actionTypes.SORT_BY_PRICE,
+  payload: CartItem,
+}
+
+export type TypeActionCart = CartAddItem | CartRemoveItem | SortByPrice;
 
 export interface CartItem {
   name: string,
