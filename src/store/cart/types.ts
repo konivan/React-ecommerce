@@ -3,6 +3,8 @@ import { Dispatch, SetStateAction } from "react";
 export enum actionTypes {
   CART_ADD_ITEM = 'CART_ADD_ITEM',
   CART_REMOVE_ITEM = 'CART_REMOVE_ITEM',
+  SORT_BY_PRICE = 'SORT_BY_PRICE',
+  SORT_BY_NAME = 'SORT_BY_NAME',
 }
 
 interface CartAddItemPayload {

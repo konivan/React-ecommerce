@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { useDispatch } from 'react-redux';
 import { CartItem } from '../../store/cart/types';
 import CardItem from './CardItem/CardItem';
 import './Content.css'
@@ -134,10 +135,26 @@ const contentItem: CartItem[] = [
 ];
 
 const Content:FC = () => {
+  const dispatch = useDispatch();
+  const sortPriceHandler = () => {
+    dispatch(sortItemsByPrice())
+  }
+  const sortNameHandler = () => {
+    dispatch(sortItemsByName())
+  }
+
   return (
-    <div className='content-wrap'>
-      {contentItem.map(item => <CardItem item={item} key={item._id}/>)}
-    </div>
+    <>
+      <div className="content-wrap">
+        <div className="sort-btn-wrapper">
+          <button onClick={sortPriceHandler} className="price-btn">По цене</button>
+          <button onClick={sortNameHandler} className="name-btn">По названию</button>
+        </div>
+        {contentItem.map((item) => (
+          <CardItem item={item} key={item._id} />
+        ))}
+      </div>
+    </>
   );
 };
 

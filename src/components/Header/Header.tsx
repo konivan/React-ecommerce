@@ -5,7 +5,6 @@ import './Header.css';
 import { useTypeSelector } from '../../hooks/useTypeSelector';
 import { useDispatch } from 'react-redux';
 import { removeFromCart } from '../../store/cart/actions';
-import ItemCount from '../Content/CardItem/ItemCount/ItemCount';
 
 
 const Header: FC = () => {
@@ -18,7 +17,7 @@ const Header: FC = () => {
     dispatch(removeFromCart(id))
   };
 
-  const total:number = cart.reduce((acc, item) => acc + item.price * item.count, 0)
+  const total: number = cart.reduce((acc, item) => acc + item.price * item.count, 0)
 
   return (
     <div className='header-wrap'>
