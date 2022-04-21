@@ -38,11 +38,6 @@
   position: relative;
   left: 130px;
   top: 100px;
-  padding: 5px 20px;
-  border: 1px solid red;
-  border-radius: 10px;
-  background-color: crimson;
-  color: aliceblue;
   font-weight: 600;
   z-index: 1;
 }
