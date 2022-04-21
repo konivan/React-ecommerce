@@ -26,6 +26,13 @@
  right: 0;
 }
 
+.cartBtn img:hover {
+  position: relative;
+  top: 8px;
+  right: 10px;
+  width: 52px;
+}
+
 .cart-length {
   font-weight: 700;
   width: 35px;
