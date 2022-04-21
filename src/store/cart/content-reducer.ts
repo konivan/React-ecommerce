@@ -75,7 +75,7 @@ const initialState: CartItem[] = [
   {
     name: "Lenovo ThinkPad",
     imagePath: "https://items.s1.citilink.ru/1428333_v01_b.jpg",
-    price: 4800,
+    price: 3800,
     _id: '1231212',
     count: 1,
   },
@@ -108,9 +108,9 @@ const initialState: CartItem[] = [
     count: 1,
   },
   {
-    name: "Apple M1 Pro 10",
-    imagePath: "https://items.s1.citilink.ru/1624466_v01_b.jpg",
-    price: 4200,
+    name: "Lenovo Yoga 7",
+    imagePath: "https://items.s1.citilink.ru/1611881_v01_b.jpg",
+    price: 2800,
     _id: 'vcvcvcv',
     count: 1,
   },
