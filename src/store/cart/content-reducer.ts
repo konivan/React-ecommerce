@@ -133,6 +133,9 @@ const initialState: CartItem[] = [
 export const contentReducer = (state = initialState, action: TypeActionCart) => {
   switch (action.type) {
     case actionTypes.SORT_BY_PRICE: {
+      return state.sort((a, b) => b.price - a.price);
+    }
+    case actionTypes.SORT_BY_PRICE_LOWER: {
       return state.sort((a, b) => a.price - b.price);
     }
     default:

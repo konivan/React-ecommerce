@@ -15,7 +15,7 @@ export const sortItemsByPrice = (product: CartItem[]) => ({
   payload: product,
 })
 
-export const sortItemsByName = (product: CartItem[]) => ({
-  type: actionTypes.SORT_BY_NAME,
+export const sortItemsByPriceLower = (product: CartItem[]) => ({
+  type: actionTypes.SORT_BY_PRICE_LOWER,
   payload: product,
 })

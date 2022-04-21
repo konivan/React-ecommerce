@@ -4,7 +4,7 @@ export enum actionTypes {
   CART_ADD_ITEM = 'CART_ADD_ITEM',
   CART_REMOVE_ITEM = 'CART_REMOVE_ITEM',
   SORT_BY_PRICE = 'SORT_BY_PRICE',
-  SORT_BY_NAME = 'SORT_BY_NAME',
+  SORT_BY_PRICE_LOWER = 'SORT_BY_PRICE_LOWER',
 }
 
 interface CartAddItemPayload {
@@ -27,7 +27,12 @@ interface SortByPrice {
   payload: CartItem,
 }
 
-export type TypeActionCart = CartAddItem | CartRemoveItem | SortByPrice;
+interface SortByPriceLower {
+  type: actionTypes.SORT_BY_PRICE_LOWER,
+  payload: CartItem,
+}
+
+export type TypeActionCart = CartAddItem | CartRemoveItem | SortByPrice | SortByPriceLower;
 
 export interface CartItem {
   name: string,
