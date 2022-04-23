@@ -26,11 +26,11 @@ const CardItem:FC<Props> = ({item}) => {
         <div className="item-name">{item.name}</div>
         <div className='item-desc-wrap'>
           <div className='item-category font-serif'>
-            <div className='item-cat'>Диск: <span className='desc'>{item.description.disk}</span></div>
-            <div className='item-cat'>Экран: <span className='desc'>{item.description.screen}</span></div>
-            <div className='item-cat'>Процессор: <span className='desc'>{item.description.CPU}</span></div>
-            <div className='item-cat'>Оперативная память: <span className='desc'>{item.description.RAM}</span></div>
-            <div className='item-cat'>Операционная система: <span className='desc'>{item.description.OS}</span></div>
+            <div className='item-cat'><span className='font-bold'>Диск:</span> <span className='desc ml-1'>{item.description.disk}</span></div>
+            <div className='item-cat'><span className='font-bold'>Экран:</span> <span className='desc ml-1'>{item.description.screen}</span></div>
+            <div className='item-cat'><span className='font-bold'>CPU:</span> <span className='desc ml-1'>{item.description.CPU}</span></div>
+            <div className='item-cat'><span className='font-bold'>RAM:</span> <span className='desc ml-1'>{item.description.RAM}</span></div>
+            <div className='item-cat'><span className='font-bold'>OS:</span> <span className='desc ml-1'>{item.description.OS}</span></div>
           </div>
           <div className='item-desc'></div>
         </div>
