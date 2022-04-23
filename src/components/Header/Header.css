@@ -100,3 +100,19 @@
   background-color: #dc143c;
   color: white;
 }
+
+.model-input-wrapper {
+  position: relative;
+  right: 765px;
+  top: 16PX;
+}
+
+.model-input {
+  border-radius: 8px;
+  outline: none;
+  font-weight: 600;
+  width: 370px;
+  height: 30px;
+  padding: 14px 10px;
+  border: 3px solid #4d4f50;
+}
