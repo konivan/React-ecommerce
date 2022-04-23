@@ -22,14 +22,13 @@
 
 .item-name {
   font-weight: 700;
-  margin-bottom: 20px;
   z-index: 1;
 }
 
 .item-price {
   position: relative;
   right: 220px;
-  top: 140px;
+  top: 160px;
   font-weight: 700;
   z-index: 1;
 }
@@ -37,7 +36,26 @@
 .item-btn {
   position: relative;
   left: 130px;
-  top: 100px;
+  top: 120px;
   font-weight: 600;
   z-index: 1;
+}
+
+.item-desc-wrap {
+  position: absolute;
+  top: 36px;
+  width: 270px;
+  left: 74px;
+}
+
+.item-category {
+  position: relative;
+  right: 140px;
+  width: 270px;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.desc {
+  font-weight: 700;
 }

@@ -37,6 +37,7 @@ export type TypeActionCart = CartAddItem | CartRemoveItem | SortByPrice | SortBy
 export interface CartItem {
   name: string,
   imagePath: string,
+  description: any,
   price: number,
   count: number,
   _id: string,
@@ -45,6 +46,7 @@ export interface CartItem {
 export interface ContentItem {
   name: string,
   imagePath: string,
+  description: any,
   price: number,
   _id: string,
 }
