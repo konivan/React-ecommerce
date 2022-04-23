@@ -29,7 +29,7 @@ const Header: FC = () => {
         <button className="input-btn">
           <a
             href="#_"
-            className="absolute bottom-7 bg-purple-600 font-bold ml-2 h-9 inline-flex items-center justify-center px-6 overflow-hidden text-indigo-600 transition duration-300 ease-out border-2 border-purple-800 rounded-full shadow-md group">
+            className="absolute bottom-7 bg-purple-600 font-bold ml-2 h-9 inline-flex items-center justify-center px-6 overflow-hidden text-indigo-600 transition duration-300 ease-out border-2 border-purple-600 rounded-full shadow-md group">
             <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-purple-600 group-hover:translate-x-0 ease">
               <svg
                 className="w-6 h-6"
