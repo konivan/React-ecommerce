@@ -264,7 +264,9 @@ export const contentReducer = (state = initialState, action: TypeActionCart) => 
       return state.sort((a, b) => a.price - b.price);
     }
     case actionTypes.SEARCH_CONTENT: {
-      return state.filter(state => state.name.includes(action.payload));
+      if (action.payload !== '') {
+        return state.filter(state => state.name.includes(action.payload));
+      } else return state;
     }
     default:
       return state;
