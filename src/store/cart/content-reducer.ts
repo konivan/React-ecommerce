@@ -263,6 +263,9 @@ export const contentReducer = (state = initialState, action: TypeActionCart) => 
     case actionTypes.SORT_BY_PRICE_LOWER: {
       return state.sort((a, b) => a.price - b.price);
     }
+    case actionTypes.SEARCH_CONTENT: {
+      return state.filter(state => state.name.includes(action.payload));
+    }
     default:
       return state;
   }

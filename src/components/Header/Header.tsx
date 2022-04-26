@@ -4,18 +4,28 @@ import cartImg from '../../assets/images/bx-cart.svg';
 import './Header.css';
 import { useTypeSelector } from '../../hooks/useTypeSelector';
 import { useDispatch } from 'react-redux';
-import { removeFromCart } from '../../store/cart/actions';
+import { removeFromCart, searchContent } from '../../store/cart/actions';
 
 
 const Header: FC = () => {
   const cart = useTypeSelector(state => state.cart);
+  const content = useTypeSelector(state => state.content);
   const[isCartShow, setIsCartShow] = useState(true);
+  const [value, setValue] = useState('');
 
   const dispatch = useDispatch();
 
   const removeHandler = (id: string) => {
     dispatch(removeFromCart(id))
   };
+
+  const searchHandler = (value: string) => {
+    dispatch(searchContent(value))
+  };
+
+  function handleChange(event: any) {
+    setValue(event.target.value);
+  }
 
   const total: number = cart.reduce((acc, item) => acc + item.price * item.count, 0)
 
@@ -25,11 +35,11 @@ const Header: FC = () => {
         <img src={logoImg} alt="logo" />
       </div>
       <div className="model-input-wrapper">
-        <input className="model-input" placeholder="Поиск по модели"></input>
-        <button className="input-btn">
+        <input className="model-input" value={value} onChange={handleChange} placeholder="Поиск по модели"></input>
+        <button className="input-btn" onClick={() => searchHandler(value)}>
           <a
             href="#_"
-            className="absolute bottom-7 bg-purple-600 font-bold ml-2 h-9 inline-flex items-center justify-center px-6 overflow-hidden text-indigo-600 transition duration-300 ease-out border-2 border-purple-600 rounded-full shadow-md group">
+            className="relative bg-purple-600 font-bold ml-2 h-9 inline-flex items-center justify-center px-2 overflow-hidden text-indigo-600 transition duration-300 ease-out border-2 border-purple-600 rounded-full shadow-md group">
             <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-purple-600 group-hover:translate-x-0 ease">
               <svg
                 className="w-6 h-6"

@@ -19,3 +19,8 @@ export const sortItemsByPriceLower = (product: CartItem[]) => ({
   type: actionTypes.SORT_BY_PRICE_LOWER,
   payload: product,
 })
+
+export const searchContent = (value: string) => ({
+  type: actionTypes.SEARCH_CONTENT,
+  payload: value,
+})

@@ -102,8 +102,8 @@
 }
 
 .model-input-wrapper {
-  position: relative;
-  right: 765px;
+  position: fixed;
+  right: 670px;
   top: 16PX;
 }
 
