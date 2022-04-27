@@ -2,7 +2,7 @@
   grid-area: c;
   background-color: #f7f7f7;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 5px;
   padding-bottom: 30px;
   width: 1500px;
   display: flex;
@@ -11,7 +11,8 @@
 }
 
 .sort-btn-wrapper {
-  position: absolute;
+  position: relative;
+  top: 42px;
   left: 330px;
 }
 

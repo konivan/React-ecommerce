@@ -34,7 +34,7 @@ const Header: FC = () => {
       <div className="header-logo-wrap">
         <img src={logoImg} alt="logo" />
       </div>
-      <div className="model-input-wrapper">
+      <div className={isCartShow ? "model-input-wrapper-r" : 'model-input-wrapper-a'}>
         <input className="model-input" value={value} onChange={handleChange} placeholder="Поиск по модели"></input>
         <button className="input-btn" onClick={() => searchHandler(value)}>
           <a
