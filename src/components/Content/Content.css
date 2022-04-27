@@ -34,3 +34,12 @@
   border: 3px solid #4f4e4e;
   border-radius: 7px;
 }
+
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  height: 815px;
+}

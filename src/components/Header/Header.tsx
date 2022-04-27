@@ -62,11 +62,7 @@ const Header: FC = () => {
         </button>
       </div>
       <button
-        onClick={() => {
-          setIsCartShow(!isCartShow);
-        }}
-        className="cartBtn"
-      >
+        onClick={() => {setIsCartShow(!isCartShow)}} className="cartBtn">
         <img src={cartImg} />
         <div className="cart-length">{cart.length}</div>
       </button>

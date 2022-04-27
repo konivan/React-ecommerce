@@ -22,8 +22,9 @@ const Content:FC = () => {
 
   return (
     <>
+    {content.length == 0 ? <div className='not-found'>Ничего не найдено...</div> :
       <div className="content-wrap">
-        <div className="sort-btn-wrapper">
+        <div className={content.length !== 0 ? 'sort-btn-wrapper' : 'hidden'}>
           <span className='relative bottom-2 font-semibold text-xl mr-3'>Отсортировать цену по:</span>
           <button onClick={() => sortPriceHandler(content)} className='relative bottom-3'>
             <a
@@ -48,6 +49,7 @@ const Content:FC = () => {
           <CardItem item={item} key={item._id} />
         ))}
       </div>
+}
     </>
   );
 };

@@ -10,3 +10,17 @@
   position: relative;
   bottom: 0px;
 }
+
+.not-found-wrap {
+  grid-area: f;
+  height: 80px;
+  width: 1920px;
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  flex-direction: column;
+  position: relative;
+  bottom: 0px;
+}
