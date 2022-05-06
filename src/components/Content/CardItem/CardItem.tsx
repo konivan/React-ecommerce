@@ -1,5 +1,6 @@
 import React, { FC, useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import { addToCart } from '../../../store/cart/actions';
 import { CartItem } from '../../../store/cart/types';
 import './CardItem.css';
@@ -20,6 +21,7 @@ const CardItem:FC<Props> = ({item}) => {
   }
 
   return (
+    <NavLink to={`/product/${item._id}`}>
     <div className="item-wrap">
       <img src={item.imagePath} alt={item.name} />
       <div className="text-wrap">
@@ -49,6 +51,7 @@ const CardItem:FC<Props> = ({item}) => {
         <ItemCount count={count} setCount={setCount} />
       </div>
     </div>
+    </NavLink>
   );
 };
 

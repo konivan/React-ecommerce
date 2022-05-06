@@ -89,8 +89,7 @@ const Header: FC = () => {
           </div>
         ))}
         <div
-          className={isCartShow || cart.length == 0 ? "hidden" : "total-cart"}
-        >
+          className={isCartShow || cart.length === 0 ? "hidden" : "total-cart"}>
           Итого: {total}$
         </div>
       </div>

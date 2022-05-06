@@ -265,8 +265,6 @@ export const contentReducer = (state = initialState, action: TypeActionCart) => 
     }
     case actionTypes.SEARCH_CONTENT: {
       if (action.payload !== '') {
-        let a = action.payload.toLowerCase;
-        let b = [...state]
         return state.filter(state => state.name.toLowerCase().includes(action.payload.toLowerCase()));
       } else return state;
     }
