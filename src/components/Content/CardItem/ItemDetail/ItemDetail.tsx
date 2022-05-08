@@ -3,12 +3,14 @@ import { useParams } from 'react-router-dom';
 import { useTypeSelector } from '../../../../hooks/useTypeSelector';
 
 const ItemDetail = () => {
-  const { product } = useParams();
+  const { item_id } = useParams();
   const content = useTypeSelector(state => state.content);
+  content.filter(() => content)
+  console.log(content)
 
   return (
     <div>
-      <button onClick={() => console.log(product)}>click</button>
+      {item_id}
     </div>
   );
 };
