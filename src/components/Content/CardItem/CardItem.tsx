@@ -34,7 +34,6 @@ const CardItem:FC<Props> = ({item}) => {
             <div className='item-cat'><span className='font-bold'>RAM:</span> <span className='desc ml-1'>{item.description.RAM}</span></div>
             <div className='item-cat'><span className='font-bold'>OS:</span> <span className='desc ml-1'>{item.description.OS}</span></div>
           </div>
-          <div className='item-desc'></div>
         </div>
         <div className="item-price">{item.price}$</div>
         <button onClick={addHandler} className='item-btn'>

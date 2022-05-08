@@ -1,5 +1,4 @@
 .item-wrap {
-  /* box-shadow: 4px 4px #a9a5a590; */
   border-radius: 30px;
   margin: 50px 20px;
   padding: 20px 20px;
@@ -55,7 +54,3 @@
   line-height: 22px;
   font-size: 16px;
 }
-
-/* .desc {
-  font-weight: 700;
-} */
