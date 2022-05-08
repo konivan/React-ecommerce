@@ -5,8 +5,7 @@ import { useTypeSelector } from '../../../../hooks/useTypeSelector';
 const ItemDetail = () => {
   const { item_id } = useParams();
   const content = useTypeSelector(state => state.content);
-  content.filter(() => content)
-  console.log(content)
+  const currentItem = content.filter(el => el._id === item_id)
 
   return (
     <div>
