@@ -17,7 +17,7 @@ const ItemDetail = () => {
             <img src={selectItem[0].imagePath} alt={selectItem[0].name}/>
           </div>
           <div className='selectItem-desc-wrap'>
-            <div className='font-bold'>Характеристики ноутбука:</div>
+            <div className='font-bold mb-3'>Характеристики ноутбука:</div>
             <div>
               <div><span className='font-bold'>Диск:</span> <span className='ml-1'>{selectItem[0].description.disk}</span></div>
               <div><span className='font-bold'>Экран:</span> <span className='ml-1'>{selectItem[0].description.screen}</span></div>
@@ -27,7 +27,7 @@ const ItemDetail = () => {
             </div>
           </div>
           <div className='selectItem-price-wrap'>
-          <div className='selectItem-price'>{selectItem[0].price}$</div>
+          <div className='selectItem-price'>Стоимость: {selectItem[0].price}$</div>
           <button className='selectItem-btn'>
           <a
             href="#_"
@@ -40,6 +40,7 @@ const ItemDetail = () => {
           </a>
         </button>
         </div>
+        <div className='description'></div>
         </div>
       </div>
     </>
