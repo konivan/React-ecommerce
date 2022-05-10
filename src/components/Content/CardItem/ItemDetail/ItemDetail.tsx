@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useTypeSelector } from '../../../../hooks/useTypeSelector';
+import './ItemDetail.css';
 
 const ItemDetail = () => {
   const { item_id } = useParams();
@@ -11,11 +12,12 @@ const ItemDetail = () => {
     <>
       <div className='selectItem-wrap'>
         <div className='selectItem-content'>
+        <div className='selectItem-name'>{selectItem[0].name}</div>
           <div className='selectItem-img-wrap'>
-            <div className='selectItem-name'>{selectItem[0].name}</div>
             <img src={selectItem[0].imagePath} alt={selectItem[0].name}/>
           </div>
-          <div>
+          <div className='selectItem-desc-wrap'>
+            <div className='font-bold'>Характеристики ноутбука:</div>
             <div>
               <div><span className='font-bold'>Диск:</span> <span className='ml-1'>{selectItem[0].description.disk}</span></div>
               <div><span className='font-bold'>Экран:</span> <span className='ml-1'>{selectItem[0].description.screen}</span></div>
@@ -24,8 +26,9 @@ const ItemDetail = () => {
               <div><span className='font-bold'>OS:</span> <span className='ml-1'>{selectItem[0].description.OS}</span></div>
             </div>
           </div>
-          <div>{selectItem[0].price}$</div>
-          <button>
+          <div className='selectItem-price-wrap'>
+          <div className='selectItem-price'>{selectItem[0].price}$</div>
+          <button className='selectItem-btn'>
           <a
             href="#_"
             className="px-3.5 py-1.5 mb-0.5 relative rounded group text-white font-semibold inline-block">
@@ -36,6 +39,7 @@ const ItemDetail = () => {
             <span className="relative">В корзину</span>
           </a>
         </button>
+        </div>
         </div>
       </div>
     </>
