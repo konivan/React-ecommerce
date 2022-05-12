@@ -47,27 +47,28 @@
 .selectItem-price-wrap {
   border: 3px solid #4d4f50;
   border-radius: 10px;
-  width: 320px;
+  width: 350px;
   padding: 10px;
   height: 65px;
   position: relative;
-  bottom: 150px;
-  left: 85px;
+  bottom: 270px;
+  left: 750px;
 }
 
 .selectItem-btn {
   position: relative;
-  left: 185px;
+  left: 215px;
   bottom: 30px;
 }
 
 .selectItem-price {
   position: relative;
   top: 3px;
+  left: 10px;
   font-weight: 700;
   font-size: 20px;
 }
 
 .description {
-  width: 500px;
-}
+
+  }
