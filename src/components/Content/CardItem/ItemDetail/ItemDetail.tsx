@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { useTypeSelector } from '../../../../hooks/useTypeSelector';
@@ -10,9 +10,11 @@ const ItemDetail = () => {
   const content = useTypeSelector(state => state.content);
   const selectItem = content.filter(el => el._id === item_id);
 
+  const [count, setCount] = useState(1);
   const dispatch = useDispatch();
   const addHandler = () => {
-    dispatch(addToCart(selectItem[0], 1))
+    dispatch(addToCart(selectItem[0], count));
+    setCount(count + 1);
   }
 
   return (
