@@ -5,6 +5,7 @@ import './Header.css';
 import { useTypeSelector } from '../../hooks/useTypeSelector';
 import { useDispatch } from 'react-redux';
 import { removeFromCart, searchContent } from '../../store/cart/actions';
+import { NavLink } from 'react-router-dom';
 
 
 const Header: FC = () => {
@@ -32,7 +33,9 @@ const Header: FC = () => {
   return (
     <div className="header-wrap">
       <div className="header-logo-wrap">
+        <NavLink to={'/'}>
         <img src={logoImg} alt="logo" />
+        </NavLink>
       </div>
       <div className={isCartShow ? "model-input-wrapper-r" : 'model-input-wrapper-a'}>
         <input className="model-input" value={value} onChange={handleChange} placeholder="Поиск по модели"></input>

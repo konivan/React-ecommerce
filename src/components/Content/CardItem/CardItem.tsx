@@ -21,9 +21,10 @@ const CardItem:FC<Props> = ({item}) => {
   }
 
   return (
-    <NavLink to={`/product/${item._id}`}>
     <div className="item-wrap">
+      <NavLink to={`/product/${item._id}`}>
       <img src={item.imagePath} alt={item.name} />
+      </NavLink>
       <div className="text-wrap">
         <div className="item-name">{item.name}</div>
         <div className='item-desc-wrap'>
@@ -50,7 +51,6 @@ const CardItem:FC<Props> = ({item}) => {
         <ItemCount count={count} setCount={setCount} />
       </div>
     </div>
-    </NavLink>
   );
 };
 
